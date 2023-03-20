@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&family=Rochester&display=swap");
+@media screen and (max-width: 576px) {
+  .container {
+    background-size: auto;
+    .blur {
+      backdrop-filter: none;
+      nav {
+        .link {
+          li {
+            display: none;
+          }
+        }
+        .bar {
+          display: block;
+          margin: 5% 0 0 0;
+          img {
+            max-width: 40px;
+          }
+        }
+        .sidebar {
+          display: block;
+          background: #2525259c;
+          width: 100%;
+          position: fixed;
+          height: 140vh;
+          z-index: 2;
+          margin-top: 100%;
+          margin-left: 100%;
+          backdrop-filter: blur(10px);
+          transition: all ease-in-out 0.3s;
+          // overflow: hidden;
+          ul {
+            display: block;
+            margin: 90% 0 0 0;
+            // gap: -5px;
+            text-align: center;
+          }
+          a {
+            color: white;
+          }
+          .bar {
+            margin-left: 60%;
+            img {
+              max-width: 40px;
+            }
+          }
+        }
+        span {
+          font-weight: 800;
+        }
+      }
+    }
+  }
+
+  .pengantin {
+    margin-top: 10%;
+    h1 {
+      padding: 5% 10%;
+    }
+    p {
+      padding: 5% 0;
+    }
+  }
+  .mempelai {
+    background-size: auto;
+    background-repeat: no-repeat;
+    height: 240vh;
+    .ucapan {
+      h1 {
+        font-size: 40px;
+      }
+      p {
+        padding: 10% 0;
+      }
+    }
+
+    .flex {
+      .kotak {
+        height: 600px;
+        width: 350px;
+        //   margin: 10% 0%;
+        .deskripsi {
+          padding-top: 20%;
+        }
+      }
+      .dan {
+        margin: 5% 0;
+      }
+    }
+    .undangan {
+      .acara {
+        padding: 15% 0 0 0;
+        h1 {
+          font-size: 40px;
+        }
+        p {
+          padding: 5% 10%;
+        }
+      }
+    }
+    .ucapan-footer {
+      padding: 10% 0;
+      margin-left: 5%;
+      p {
+        padding-right: 5%;
+      }
+    }
+
+    .flex {
+      .kotak-acara {
+        width: 335px;
+        margin: 10% 0;
+        backdrop-filter: none;
+        .judul-acara {
+          p {
+            padding: 5% 0;
+          }
+        }
+      }
+    }
+  }
+  .progress {
+    height: 200vh;
+    margin-top: 210vh;
+    .judul-undangan {
+      padding: 15% 0;
+      p {
+        padding: 5% 10%;
+      }
+    }
+    .timeline {
+      ul {
+        padding-top: 10px;
+      }
+      ul li div {
+        width: 300px;
+      }
+      ul li {
+        margin: 0 5%;
+      }
+      ul li:nth-child(even) div {
+        left: 45px;
+      }
+      ul li:nth-child(even) div::before {
+        right: 100%;
+        border-width: 8px 16px 8px 0;
+
+        border-color: transparent deeppink transparent transparent;
+      }
+    }
+  }
+  .galeri {
+    height: 330vh;
+    background-color: whitesmoke;
+  }
+  .doa-ucapan {
+    height: 150vh;
+    background-size: 140%;
+    background-repeat: no-repeat;
+    // background-position: -1em;
+    background-position-y: 80%;
+    background-position-x: 50%;
+    .salam {
+      p {
+        padding: 0 2.5%;
+      }
+      p:nth-child(2) {
+        padding: 4% 1%;
+      }
+      p:nth-child(3) {
+        padding: 4% 2%;
+      }
+      p:nth-child(4) {
+        padding: 4% 0;
+      }
+      .flex {
+        margin-left: 0%;
+        .keluarga {
+          width: 100%;
+        }
+      }
+    }
+    .nama-pengantin {
+      h1 {
+        text-align: center;
+        color: deeppink;
+        padding: 22% 30%;
+        text-shadow: 0px 2px 4px rgba(192, 187, 187, 0.637);
+      }
+    }
+    .doa {
+      p {
+        padding: 10% 10%;
+      }
+    }
+  }
+  footer {
+    padding: 35% 3% 0 0;
+  }
+}

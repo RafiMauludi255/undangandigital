@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Ahmad & Dina</title>
+  </head>
+  <body>
+    <audio id="song" loop>
+      <source src="/audio/frad-first-date.mp3" type="audio/mpeg" />
+    </audio>
+    <!-- BACKGROUND -->
+    <div class="container">
+      <!-- EFEK BLUR -->
+      <div class="blur">
+        <!-- NAVBAR -->
+        <nav>
+          <span>Ahmad & Dina</span>
+          <!-- LINK -->
+          <ul class="link">
+            <li><a href="#">home</a></li>
+            <li><a href="#mempelai">mempelai</a></li>
+            <li><a href="#undangan">undangan</a></li>
+            <li><a href="#cerita">cerita cinta</a></li>
+            <li><a href="#galeri">foto galeri</a></li>
+            <li><a href="#doa-ucapan">doa dan ucapan</a></li>
+          </ul>
+          <div class="bar">
+            <img src="/asset/bars.png" alt="bars" onclick="handleBar()" />
+          </div>
+          <div class="sidebar" id="sidebar">
+            <ul>
+              <div class="bar">
+                <img src="/asset/bars.png" alt="bars" onclick="closeBar()" />
+              </div>
+              <li><a href="#">home</a></li>
+              <li><a href="#mempelai">mempelai</a></li>
+              <li><a href="#undangan">undangan</a></li>
+              <li><a href="#cerita">cerita cinta</a></li>
+              <li><a href="#galeri">foto galeri</a></li>
+              <li><a href="#doa-ucapan">doa dan ucapan</a></li>
+            </ul>
+          </div>
+        </nav>
+        <!-- HEADING PERTAMA -->
+        <div data-aos="fade-up" data-aos-duration="3000">
+          <div class="pengantin">
+            <h1>Ahmad & Dina</h1>
+            <p>Akan segera melangsungkan pernikahan suci</p>
+            <span>Rabu, 16 Maret 2023</span>
+            <br />
+            <a href="#mempelai"
+              ><button onclick="playSong()">Buka Undangan</button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MEMPELAI -->
+    <div class="mempelai" id="mempelai">
+      <!-- SALAM -->
+      <div
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        data-aos-easing="ease-in-back"
+      >
+        <div class="ucapan">
+          <h1>Assalamua'laikum Warahmatullahi Wabarakatuh</h1>
+          <p>
+            Maha Suci Allah yang telah menciptakan makhluk-Nya
+            berpasang-pasangan
+            <br />
+            Ya Allah, perkenankanlah putra-putri kami :
+          </p>
+        </div>
+      </div>
+      <!-- FLEXBOX -->
+      <div class="flex">
+        <div
+          data-aos="fade-right"
+          data-aos-duration="3000"
+          data-aos-easing="ease-in-back"
+        >
+          <!-- KOTAK MEMPELAI -->
+          <div class="kotak">
+            <!-- AVATAR -->
+            <div class="icon">
+              <img src="/asset/confident-groom-posing-camera-park.jpg" alt="" />
+              <h1>Ahmad&nbsp;Rimawan</h1>
+              <span
+                >Putra ke-1 dari <br />
+                Agus & Irma</span
+              >
+            </div>
+            <!-- DESKRIPSI MEMPELAI -->
+            <div class="deskripsi">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
+                perspiciatis quibusdam dolore reprehenderit libero velit animi!
+                Dolore ad non quisquam.
+              </p>
+            </div>
+          </div>
+        </div>
+        <h1 class="dan">&</h1>
+        <!-- KOTAK MEMPELAI -->
+        <div
+          data-aos="fade-left"
+          data-aos-duration="3000"
+          data-aos-easing="ease-in-back"
+        >
+          <div class="kotak">
+            <!-- AVATAR -->
+            <div class="icon">
+              <img
+                src="/asset/young-beautiful-stylish-woman-wedding-dress.jpg"
+              />
+              <h1>Dina Aruni</h1>
+              <span
+                >Putri ke-2 dari <br />
+                Ridwan & Rina</span
+              >
+            </div>
+            <!-- DESKRIPSI MEMPELAI -->
+            <div class="deskripsi">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
+                perspiciatis quibusdam dolore reprehenderit libero velit animi!
+                Dolore ad non quisquam.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SALAM PERTENGAHAN -->
+      <div
+        data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="1500"
+        data-aos-offset="0"
+      >
+        <div class="ucapan-footer">
+          <p>
+            " Untuk melaksanakan sunnah Rasul-Mu dalam membentuk keluarga yang
+            Sakinah, Mawaddah, Warahmah "
+          </p>
+        </div>
+      </div>
+      <!-- JADWAL ACARA -->
+      <div class="undangan" id="undangan">
+        <!-- JUDUL -->
+        <div
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          data-aos-easing="ease-in-back"
+        >
+          <div class="acara">
+            <h1>Undangan & Acara</h1>
+            <p>
+              Dengan memohon rahmat dan ridho Allah SWT. kami mengundang
+              Bapak/Ibu/Saudara/i untuk menghadiri resepsi pernikahan
+              putra-putri kami, yang Insya Allah akan diselenggarakan pada :
+            </p>
+          </div>
+
+          <!-- FLEXBOX -->
+          <div class="flex">
+            <!-- KOTAK ACARA -->
+
+            <div class="kotak-acara">
+              <!-- JUDUL ACARA -->
+              <div class="judul-acara">
+                <p>akad nikah</p>
+              </div>
+              <div class="flex">
+                <!-- ICON -->
+                <div class="icon">
+                  <img src="/asset/calendar.png" alt="" />
+                  <p>Rabu <br />16&nbsp;Maret&nbsp;2023</p>
+                </div>
+                <div class="icon">
+                  <img src="/asset/clock.png" alt="" />
+                  <p>Pukul<br />10:00&nbsp;-&nbsp;11:00</p>
+                </div>
+                <div class="icon">
+                  <img src="/asset/location.png" alt="" />
+                  <p>Jl. Raya puncak Gadog Harakatul Jannah</p>
+                </div>
+              </div>
+            </div>
+            <!-- KOTAK ACARA -->
+            <div class="kotak-acara">
+              <!-- JUDUL ACARA -->
+              <div class="judul-acara">
+                <p>resepsi</p>
+              </div>
+              <!-- FLEXBOX -->
+              <div class="flex">
+                <!-- ICON -->
+                <div class="icon">
+                  <img src="/asset/calendar.png" alt="" />
+                  <p>Rabu <br />16&nbsp;Maret&nbsp;2023</p>
+                </div>
+                <div class="icon">
+                  <img src="/asset/clock.png" alt="" />
+                  <p>Pukul<br />11:00&nbsp;-&nbsp;selesai</p>
+                </div>
+                <div class="icon">
+                  <img src="/asset/location.png" alt="" />
+                  <p>Jl. Raya puncak Gadog Harakatul Jannah</p>
+                </div>
+              </div>
+            </div>
+            <!-- KOTAK ACARA -->
+            <div class="kotak-acara">
+              <!-- JUDUL ACARA -->
+              <div class="judul-acara">
+                <p>ngunduh mantu</p>
+              </div>
+              <!-- FLEXBOX -->
+              <div class="flex">
+                <!-- ICON -->
+                <div class="icon">
+                  <img src="/asset/calendar.png" alt="" />
+                  <p>Rabu <br />17&nbsp;Maret&nbsp;2023</p>
+                </div>
+                <div class="icon">
+                  <img src="/asset/clock.png" alt="" />
+                  <p>Pukul<br />10:00&nbsp;-&nbsp;selesai</p>
+                </div>
+                <div class="icon">
+                  <img src="/asset/location.png" alt="" />
+                  <p>Jl. Raya puncak Gadog Harakatul Jannah</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CERITA CINTA -->
+    <div class="progress" id="cerita">
+      <!-- JUDUL -->
+      <div
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        data-aos-easing="ease-in-back"
+      >
+        <div class="judul-undangan">
+          <h1>Cerita Cinta</h1>
+          <p>
+            Banyak cerita yang kami lalui sehingga akhirnya kami bisa bersatu,
+            cerita yang akan kami kenang selalu, dan cerita itu kami bagi untuk
+            anda.
+          </p>
+        </div>
+
+        <section class="timeline">
+          <ul>
+            <li>
+              <div>
+                <p>Pertama kali jumpa</p>
+                <span
+                  ><time>Kamis 12 Oktober 2019</time> At vero eos et accusamus
+                  et iusto odio dignissimos ducimus qui blanditiis praesentium
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                  blanditiis praesentium
+                </span>
+              </div>
+            </li>
+            <li>
+              <div>
+                <p>Pertama kali jumpa</p>
+                <span
+                  ><time>Kamis 12 Oktober 2019</time> At vero eos et accusamus
+                  et iusto odio dignissimos ducimus qui blanditiis praesentium
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                  blanditiis praesentium
+                </span>
+              </div>
+            </li>
+            <li>
+              <div>
+                <p>Pertama kali jumpa</p>
+                <span
+                  ><time>Kamis 12 Oktober 2019</time> At vero eos et accusamus
+                  et iusto odio dignissimos ducimus qui blanditiis praesentium
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                  blanditiis praesentium
+                </span>
+              </div>
+            </li>
+            <li>
+              <div>
+                <p>Pertama kali jumpa</p>
+                <span
+                  ><time>Kamis 12 Oktober 2019</time> At vero eos et accusamus
+                  et iusto odio dignissimos ducimus qui blanditiis praesentium
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                  blanditiis praesentium
+                </span>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+    <!-- GALERI -->
+    <div class="galeri" id="galeri">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        data-aos-easing="ease-in-back"
+      >
+        <div class="judul-acara">
+          <h1>Foto Galeri</h1>
+        </div>
+        <div class="flex">
+          <div class="foto">
+            <img src="/asset/beautiful-husband-wife-posing-beach.jpg" alt="" />
+          </div>
+          <div class="foto">
+            <img src="/asset/prewed.jpg" alt="" />
+          </div>
+          <div class="foto">
+            <img
+              src="/asset/young-beautiful-stylish-woman-wedding-dress.jpg"
+              alt=""
+            />
+          </div>
+          <div class="foto">
+            <img src="/asset/groom-wedding-photo-session.jpg" alt="" />
+          </div>
+          <div class="foto">
+            <img src="/asset/pesta.jpg" alt="" />
+          </div>
+          <div class="foto">
+            <img src="/asset/confident-groom-posing-camera-park.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- DOA & UCAPAN -->
+    <div
+      data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-back"
+      data-aos-delay="1000"
+      data-aos-offset="0"
+    >
+      <div class="doa-ucapan" id="doa-ucapan">
+        <div class="judul-ucapan">
+          <h1>Doa & Ucapan</h1>
+        </div>
+        <div class="salam">
+          <p>
+            Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila
+            Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan do'a restu
+            kepada kedua mempelai.
+          </p>
+          <p>
+            Atas kehadiran dan do'a restu Bapak/Ibu/Saudara/i <br />
+            kami ucapkan terimakasih.
+          </p>
+          <p>Wassalamu'alaikum Warahmatullahi Wabarakatuh</p>
+          <p>Kami yang berbahagia,</p>
+          <div class="flex">
+            <div class="keluarga">
+              <p>Keluarga <br />Bapak&nbsp;Agus <br />&<br />Ibu Irma</p>
+            </div>
+            <div class="keluarga">
+              <p>Keluarga <br />Bapak&nbsp;Ridwan <br />&<br />Ibu Rina</p>
+            </div>
+          </div>
+        </div>
+        <div class="nama-pengantin">
+          <h1>Ahmad & Dina</h1>
+        </div>
+        <div class="doa">
+          <p>
+            " Dan di antara ayat-ayat-Nya ialah Dia menciptakan untukmu
+            istri-istri dari jenismu sendiri, supaya kamu merasa nyaman
+            kepadanya, dan dijadikan-Nya di antaramu mawadah dan rahmah.
+            Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda
+            bagi kaum yang berpikiri " <br />(Ar-Rum:21)
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer>Dibuat oleh <a href="#">bikinundangan.id</a></footer>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
